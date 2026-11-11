@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>จองพูลวิลล่าทั้งหลัง ตรวจวันว่างและราคาทันที</title>
+<meta name="description" content="จองพูลวิลล่าส่วนตัว หัวหิน เขาใหญ่ พัทยา ชะอำ เลือกวันเข้าพัก ตรวจวันว่าง และดูราคารวมพร้อมมัดจำได้ทันที">
+<meta name="theme-color" content="#0E7F8E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="จองพูลวิลล่าทั้งหลัง ตรวจวันว่างและราคาทันที">
+<meta property="og:description" content="เลือกวันเข้าพัก ตรวจวันว่าง และดูราคารวมพร้อมมัดจำได้ทันที">
+<meta property="og:locale" content="th_TH">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%8A%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;700&family=Sarabun:wght@400;600&display=swap">
+<style>
+:root{--bg:#F4F9FA;--ink:#12303A;--muted:#5C7780;--card:#fff;--line:#D3E4E8;--pool:#1AA6B7;--pool-d:#0E7F8E;--sun:#FFB627;--bad:#D6453D;--ok:#1E8E5A;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1D23;--ink:#E6F3F5;--card:#12292F;--line:#22414A;--muted:#8FB0B8;--pool:#35C3D3;--pool-d:#35C3D3;--ok:#4CC58A;--bad:#F0706A}}
+:root[data-theme="dark"]{--bg:#0C1D23;--ink:#E6F3F5;--card:#12292F;--line:#22414A;--muted:#8FB0B8;--pool:#35C3D3;--pool-d:#35C3D3;--ok:#4CC58A;--bad:#F0706A}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Sarabun,"Noto Sans Thai",sans-serif}
+h1,h2,h3,.btn,.tab{font-family:Prompt,Sarabun,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.hero{padding:32px 0 20px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.2;margin:0 0 8px;font-weight:700}
+.sub{color:var(--muted);margin:0 0 20px;max-width:56ch}
+.search{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+label{display:flex;flex-direction:column;font-size:14px;color:var(--muted);gap:4px}
+input,select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.tabs{display:flex;gap:8px;margin:20px 0 16px}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 18px;cursor:pointer;font-size:15px}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;padding-bottom:40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card svg{display:block;width:100%;height:auto}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.body h3{margin:0;font-size:18px}
+.meta{color:var(--muted);font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:13px;border:1px solid var(--line);border-radius:6px;padding:1px 8px}
+.price{font-family:Prompt;font-size:20px;font-weight:700}
+.price small{font:400 13px Sarabun;color:var(--muted)}
+.btn{border:0;border-radius:10px;padding:10px 16px;background:var(--pool-d);color:#fff;cursor:pointer;font-size:15px}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.bad{background:var(--bad)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+.badge{font-size:13px;font-weight:600}.ok{color:var(--ok)}.no{color:var(--bad)}
+dialog{border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);padding:0;width:min(560px,calc(100% - 24px));max-height:92vh}
+dialog::backdrop{background:rgba(5,20,25,.6)}
+.dlg{padding:20px;display:grid;gap:12px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sum{background:var(--bg);border-radius:10px;padding:12px;font-size:15px}
+.sum div{display:flex;justify-content:space-between;gap:8px}
+.sum .t{font-weight:600;border-top:1px solid var(--line);margin-top:6px;padding-top:6px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;font-size:12px;text-align:center}
+.cal span{padding:4px 0;border-radius:5px;background:var(--bg)}
+.cal .x{background:var(--bad);color:#fff}.cal .h{background:none;color:var(--muted)}
+.chk{flex-direction:row;align-items:center;gap:8px;color:var(--ink)}.chk input{width:auto}
+.item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px;display:grid;gap:6px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.stat b{display:block;font:700 22px Prompt}
+.err{color:var(--bad);font-size:14px;min-height:20px}
+.empty{color:var(--muted);padding:24px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1>จองพูลวิลล่าทั้งหลัง เลือกวันแล้วเห็นราคาทันที</h1>
+    <p class="sub">เลือกวันเข้าพัก จำนวนผู้เข้าพัก แล้วระบบจะบอกว่าวิลล่าหลังไหนว่าง พร้อมคำนวณราคารวมให้</p>
+    <div class="search">
+      <label>เช็คอิน<input type="date" id="fa"></label>
+      <label>เช็คเอาต์<input type="date" id="fb"></label>
+      <label>จำนวนผู้เข้าพัก<input type="number" id="fg" min="1" max="30" value="6"></label>
+      <label>ทำเล<select id="fl"><option value="">ทุกทำเล</option></select></label>
+      <label>งบสูงสุดต่อคืน<select id="fp"><option value="0">ไม่จำกัด</option><option value="10000">ไม่เกิน 10,000</option><option value="15000">ไม่เกิน 15,000</option><option value="20000">ไม่เกิน 20,000</option></select></label>
+    </div>
+    <div class="err" id="ferr" role="alert"></div>
+  </header>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" id="t1">ค้นหาวิลล่า</button>
+    <button class="tab" role="tab" aria-selected="false" id="t2">การจองทั้งหมด</button>
+  </div>
+
+  <section id="p1"><div class="grid" id="list"></div></section>
+  <section id="p2" hidden>
+    <div class="stats" id="stats"></div>
+    <div id="bk"></div>
+  </section>
+</div>
+
+<dialog id="dlg"><div class="dlg" id="dbody"></div></dialog>
+
+<script>
+var VILLAS=[
+ {id:1,name:"บ้านคลื่นเงิน",loc:"หัวหิน",bed:3,base:6,max:10,wd:8500,we:12500,h:190,tags:["สระส่วนตัว","คาราโอเกะ","ใกล้ทะเล"]},
+ {id:2,name:"วิลล่าเนินเมฆ",loc:"เขาใหญ่",bed:4,base:8,max:14,wd:11000,we:16500,h:150,tags:["สระส่วนตัว","วิวภูเขา","สนามเด็กเล่น"]},
+ {id:3,name:"เรือนน้ำใส",loc:"พัทยา",bed:5,base:10,max:18,wd:14500,we:21000,h:210,tags:["สระส่วนตัว","โฮมเธียเตอร์","สไลเดอร์"]},
+ {id:4,name:"ริมหาดสบาย",loc:"ชะอำ",bed:2,base:4,max:6,wd:5800,we:8900,h:170,tags:["สระส่วนตัว","เลี้ยงสัตว์ได้","ติดทะเล"]}
+];
+var ADDONS=[{k:"bbq",n:"เซ็ตบาร์บีคิว",p:1200,u:"ต่อการเข้าพัก"},{k:"bf",n:"อาหารเช้า",p:350,u:"ต่อคนต่อคืน"},{k:"deco",n:"ตกแต่งวันเกิด/ฮันนีมูน",p:1500,u:"ต่อการเข้าพัก"}];
+var EXTRA=500, DEP=0.3, DAY=864e5;
+
+var t0=new Date(), TODAY=Date.UTC(t0.getFullYear(),t0.getMonth(),t0.getDate());
+function ds(ms){return new Date(ms).toISOString().slice(0,10)}
+function pd(s){var p=s.split("-");return Date.UTC(+p[0],+p[1]-1,+p[2])}
+function fmt(n){return Math.round(n).toLocaleString("th-TH")+" ฿"}
+function thDate(s){return new Date(pd(s)).toLocaleDateString("th-TH",{day:"numeric",month:"short",year:"2-digit",timeZone:"UTC"})}
+function $(id){return document.getElementById(id)}
+
+var bookings=[];
+try{bookings=JSON.parse(localStorage.getItem("pv_bookings")||"[]")}catch(e){bookings=[]}
+if(!bookings.length){
+  bookings=[
+   {id:"PV100001",vid:1,name:"คุณตัวอย่าง",phone:"0800000000",a:ds(TODAY+5*DAY),b:ds(TODAY+7*DAY),guests:6,adds:[],total:25000,status:"confirmed"},
+   {id:"PV100002",vid:2,name:"คุณตัวอย่าง",phone:"0800000001",a:ds(TODAY+12*DAY),b:ds(TODAY+15*DAY),guests:8,adds:[],total:38000,status:"confirmed"}
+  ];
+}
+function save(){try{localStorage.setItem("pv_bookings",JSON.stringify(bookings))}catch(e){}}
+
+function isFree(vid,a,b){
+  return !bookings.some(function(x){return x.vid===vid&&x.status!=="cancelled"&&a<x.b&&b>x.a});
+}
+function calc(v,a,b,g,adds){
+  var n=0,room=0;
+  for(var d=pd(a);d<pd(b);d+=DAY){n++;var w=new Date(d).getUTCDay();room+=(w===5||w===6)?v.we:v.wd}
+  var extra=Math.max(0,g-v.base)*EXTRA*n,add=0,lines=[];
+  adds.forEach(function(k){var o=ADDONS.filter(function(x){return x.k===k})[0];
+    var c=k==="bf"?o.p*g*n:o.p;add+=c;lines.push([o.n,c])});
+  var total=room+extra+add;
+  return{n:n,room:room,extra:extra,add:add,lines:lines,total:total,dep:Math.round(total*DEP)};
+}
+function validRange(a,b){
+  if(!a||!b)return"";
+  if(pd(a)<TODAY)return"เลือกวันเช็คอินตั้งแต่วันนี้เป็นต้นไป";
+  if(pd(b)<=pd(a))return"วันเช็คเอาต์ต้องหลังวันเช็คอินอย่างน้อย 1 คืน";
+  return"";
+}
+
+function art(h){
+  return '<svg viewBox="0 0 320 170" aria-hidden="true"><rect width="320" height="170" fill="hsl('+h+',60%,88%)"/>'+
+  '<rect y="95" width="320" height="75" fill="hsl('+h+',35%,78%)"/>'+
+  '<polygon points="40,95 40,50 160,22 280,50 280,95" fill="hsl('+h+',30%,30%)"/>'+
+  '<rect x="70" y="62" width="40" height="33" fill="hsl('+h+',70%,85%)"/><rect x="210" y="62" width="40" height="33" fill="hsl('+h+',70%,85%)"/>'+
+  '<rect x="60" y="118" width="200" height="38" rx="8" fill="hsl('+h+',80%,50%)"/>'+
+  '<path d="M72 132q12-8 24 0t24 0t24 0t24 0t24 0t24 0" stroke="#fff" stroke-width="2" fill="none" opacity=".7"/>'+
+  '<path d="M72 144q12-8 24 0t24 0t24 0t24 0t24 0t24 0" stroke="#fff" stroke-width="2" fill="none" opacity=".5"/></svg>';
+}
+
+function init(){
+  var locs=[];VILLAS.forEach(function(v){if(locs.indexOf(v.loc)<0)locs.push(v.loc)});
+  locs.forEach(function(l){var o=document.createElement("option");o.value=l;o.textContent=l;$("fl").appendChild(o)});
+  $("fa").min=ds(TODAY);$("fb").min=ds(TODAY);
+  ["fa","fb","fg","fl","fp"].forEach(function(i){$(i).addEventListener("change",renderList)});
+  $("t1").onclick=function(){tab(1)};$("t2").onclick=function(){tab(2)};
+  renderList();
+}
+function tab(n){
+  $("p1").hidden=n!==1;$("p2").hidden=n!==2;
+  $("t1").setAttribute("aria-selected",n===1);$("t2").setAttribute("aria-selected",n===2);
+  if(n===2)renderBookings();
+}
+
+function renderList(){
+  var a=$("fa").value,b=$("fb").value,g=Math.max(1,+$("fg").value||1),loc=$("fl").value,mp=+$("fp").value;
+  var err=validRange(a,b);$("ferr").textContent=err;
+  var hasDates=a&&b&&!err,html="",count=0;
+  VILLAS.forEach(function(v){
+    if(loc&&v.loc!==loc)return;
+    if(mp&&v.wd>mp)return;
+    if(g>v.max)return;
+    count++;
+    var st="",btn='<button class="btn" data-id="'+v.id+'">ดูรายละเอียดและจอง</button>',pr='<div class="price">'+fmt(v.wd)+' <small>/คืน (อา.–พฤ.)</small></div><div class="meta">ศุกร์–เสาร์ '+fmt(v.we)+'</div>';
+    if(hasDates){
+      var free=isFree(v.id,a,b),c=calc(v,a,b,g,[]);
+      st=free?'<span class="badge ok">ว่างตามวันที่เลือก</span>':'<span class="badge no">ไม่ว่างในช่วงนี้</span>';
+      if(free)pr='<div class="price">'+fmt(c.total)+' <small>รวม '+c.n+' คืน</small></div><div class="meta">มัดจำ '+fmt(c.dep)+'</div>';
+      else btn='<button class="btn alt" data-id="'+v.id+'">ดูปฏิทินวันว่าง</button>';
+    }
+    html+='<article class="card">'+art(v.h)+'<div class="body"><h3>'+v.name+' · '+v.loc+'</h3>'+
+      '<div class="meta">'+v.bed+' ห้องนอน · พักได้ '+v.base+' คน (สูงสุด '+v.max+')</div>'+
+      '<div class="tags">'+v.tags.map(function(t){return'<span class="tag">'+t+'</span>'}).join("")+'</div>'+st+pr+btn+'</div></article>';
+  });
+  $("list").innerHTML=html||'<p class="empty">ไม่พบวิลล่าที่ตรงกับเงื่อนไข ลองเพิ่มงบหรือเปลี่ยนทำเลดูครับ</p>';
+  [].forEach.call($("list").querySelectorAll("button[data-id]"),function(el){el.onclick=function(){openVilla(+el.dataset.id)}});
+}
+
+function calHtml(v){
+  var h='<div class="cal">'+["อา","จ","อ","พ","พฤ","ศ","ส"].map(function(d){return'<span class="h">'+d+'</span>'}).join("");
+  var start=TODAY-new Date(TODAY).getUTCDay()*DAY;
+  for(var i=0;i<56;i++){
+    var d=start+i*DAY,s=ds(d),past=d<TODAY,bk=!past&&!isFree(v.id,s,ds(d+DAY));
+    h+='<span'+(bk?' class="x" title="ไม่ว่าง"':past?' style="opacity:.3"':'')+'>'+new Date(d).getUTCDate()+'</span>';
+  }
+  return h+'</div><div class="meta">สีแดง = ไม่ว่าง (แสดง 8 สัปดาห์ข้างหน้า)</div>';
+}
+
+function openVilla(id){
+  var v=VILLAS.filter(function(x){return x.id===id})[0];
+  var a=$("fa").value,b=$("fb").value,g=Math.max(1,+$("fg").value||1);
+  var h='<h2 style="margin:0">'+v.name+' · '+v.loc+'</h2>'+art(v.h)+calHtml(v)+
+   '<div class="row"><label>เช็คอิน<input type="date" id="da" min="'+ds(TODAY)+'" value="'+a+'"></label><label>เช็คเอาต์<input type="date" id="db" min="'+ds(TODAY)+'" value="'+b+'"></label></div>'+
+   '<div class="row"><label>จำนวนผู้เข้าพัก (สูงสุด '+v.max+')<input type="number" id="dg" min="1" max="'+v.max+'" value="'+Math.min(g,v.max)+'"></label><label>เบอร์โทร<input id="dp" inputmode="tel" placeholder="08x-xxx-xxxx"></label></div>'+
+   '<label>ชื่อผู้จอง<input id="dn" placeholder="ชื่อ-นามสกุล"></label>'+
+   ADDONS.map(function(o){return'<label class="chk"><input type="checkbox" class="ad" value="'+o.k+'"> '+o.n+' ('+fmt(o.p)+' '+o.u+')</label>'}).join("")+
+   '<div class="sum" id="sum"></div><div class="err" id="derr" role="alert"></div>'+
+   '<div class="row"><button class="btn alt" id="dx">ปิด</button><button class="btn" id="dok">ยืนยันการจอง</button></div>'+
+   '<div class="meta">ค่าผู้เข้าพักเกิน '+v.base+' คน คิดคนละ '+fmt(EXTRA)+' ต่อคืน · มัดจำ '+(DEP*100)+'% · ยกเลิกก่อนเข้าพัก 7 วันคืนมัดจำเต็มจำนวน</div>';
+  $("dbody").innerHTML=h;
+  var upd=function(){
+    var a=$("da").value,b=$("db").value,g=Math.max(1,+$("dg").value||1),e=validRange(a,b),s="";
+    if(g>v.max)e="พักได้สูงสุด "+v.max+" คน";
+    if(!e&&a&&b&&!isFree(v.id,a,b))e="วันที่เลือกไม่ว่าง ดูวันว่างจากปฏิทินด้านบน";
+    $("derr").textContent=e;
+    if(a&&b&&!validRange(a,b)){
+      var adds=[].map.call(document.querySelectorAll(".ad:checked"),function(x){return x.value});
+      var c=calc(v,a,b,g,adds);
+      s='<div><span>ค่าห้อง '+c.n+' คืน</span><span>'+fmt(c.room)+'</span></div>';
+      if(c.extra)s+='<div><span>ผู้เข้าพักเกิน</span><span>'+fmt(c.extra)+'</span></div>';
+      c.lines.forEach(function(l){s+='<div><span>'+l[0]+'</span><span>'+fmt(l[1])+'</span></div>'});
+      s+='<div class="t"><span>รวมทั้งหมด</span><span>'+fmt(c.total)+'</span></div><div><span>มัดจำที่ต้องชำระ</span><span>'+fmt(c.dep)+'</span></div>';
+    }else s='เลือกวันเช็คอินและเช็คเอาต์เพื่อดูราคา';
+    $("sum").innerHTML=s;
+  };
+  ["da","db","dg"].forEach(function(i){$(i).addEventListener("change",upd)});
+  [].forEach.call(document.querySelectorAll(".ad"),function(x){x.addEventListener("change",upd)});
+  $("dx").onclick=function(){$("dlg").close()};
+  $("dok").onclick=function(){
+    var a=$("da").value,b=$("db").value,g=Math.max(1,+$("dg").value||1),n=$("dn").value.trim(),p=$("dp").value.trim();
+    upd();
+    if(!a||!b||validRange(a,b)||g>v.max||!isFree(v.id,a,b))return;
+    if(!n||p.replace(/\D/g,"").length<9){$("derr").textContent="กรอกชื่อและเบอร์โทร (อย่างน้อย 9 หลัก) ให้ครบ";return}
+    var adds=[].map.call(document.querySelectorAll(".ad:checked"),function(x){return x.value});
+    var c=calc(v,a,b,g,adds);
+    bookings.push({id:"PV"+String(Date.now()).slice(-6),vid:v.id,name:n,phone:p,a:a,b:b,guests:g,adds:adds,total:c.total,status:"pending"});
+    save();$("dlg").close();renderList();tab(2);
+  };
+  upd();$("dlg").showModal();
+}
+
+function renderBookings(){
+  var live=bookings.filter(function(x){return x.status!=="cancelled"});
+  var rev=live.reduce(function(s,x){return s+(x.status==="confirmed"?x.total:0)},0);
+  $("stats").innerHTML='<div class="stat"><b>'+live.length+'</b>การจองที่ใช้งานอยู่</div><div class="stat"><b>'+live.filter(function(x){return x.status==="pending"}).length+'</b>รอชำระมัดจำ</div><div class="stat"><b>'+fmt(rev)+'</b>ยอดที่ยืนยันแล้ว</div>';
+  var sorted=bookings.slice().sort(function(x,y){return x.a<y.a?-1:1});
+  var lab={pending:"รอชำระมัดจำ",confirmed:"ยืนยันแล้ว",cancelled:"ยกเลิกแล้ว"};
+  $("bk").innerHTML=sorted.map(function(x){
+    var v=VILLAS.filter(function(y){return y.id===x.vid})[0];
+    var acts="";
+    if(x.status==="pending")acts+='<button class="btn" data-pay="'+x.id+'">ชำระมัดจำ '+fmt(x.total*DEP)+' (จำลอง)</button> ';
+    if(x.status!=="cancelled")acts+='<button class="btn alt" data-cx="'+x.id+'">ยกเลิกการจอง</button>';
+    return'<div class="item"><h3 style="margin:0">'+v.name+' · '+thDate(x.a)+' – '+thDate(x.b)+'</h3>'+
+      '<div class="meta">เลขที่ '+x.id+' · '+x.name+' · '+x.guests+' คน · รวม '+fmt(x.total)+'</div>'+
+      '<div class="badge '+(x.status==="confirmed"?"ok":x.status==="cancelled"?"no":"")+'">'+lab[x.status]+'</div>'+
+      '<div>'+acts+'</div></div>';
+  }).join("");
+  [].forEach.call(document.querySelectorAll("[data-pay]"),function(el){el.onclick=function(){setSt(el.dataset.pay,"confirmed")}});
+  [].forEach.call(document.querySelectorAll("[data-cx]"),function(el){el.onclick=function(){
+    var x=bookings.filter(function(y){return y.id===el.dataset.cx})[0];
+    var days=(pd(x.a)-TODAY)/DAY;
+    var msg=x.status==="confirmed"?(days>=7?"ยกเลิกและคืนมัดจำเต็มจำนวนใช่ไหม":"เหลือไม่ถึง 7 วันก่อนเข้าพัก มัดจำจะไม่ถูกคืน ยืนยันยกเลิกใช่ไหม"):"ยืนยันยกเลิกการจองนี้ใช่ไหม";
+    if(confirm(msg))setSt(x.id,"cancelled");
+  }});
+}
+function setSt(id,s){bookings.forEach(function(x){if(x.id===id)x.status=s});save();renderBookings();renderList()}
+init();
+</script>
+</body>
+</html>
